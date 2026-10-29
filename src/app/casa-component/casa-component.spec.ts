@@ -1,0 +1,21 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { CasaComponent } from './casa-component';
+
+describe('CasaComponent', () => {
+  let component: CasaComponent;
+  let fixture: ComponentFixture<CasaComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [CasaComponent],
+    }).compileComponents();
+
+    fixture = TestBed.createComponent(CasaComponent);
+    component = fixture.componentInstance;
+    await fixture.whenStable();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
