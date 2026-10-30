@@ -1,13 +1,14 @@
 <h1>Select numeros</h1>
 <form #form="ngForm">
+    <button (click)="generarNumero()">
+        Generar número
+    </button>
     Seleccione un numero:
-    <select
-     name="selectnumero" #selectnumero>
-     <option>7</option>
-     <option>8</option>
-     <option>11</option>
-     <option>12</option>
-     <option>30</option>
+    <select name="selectnumero" #selectnumero>
+        @for (num of arrayNumeros; track num){
+            <option>{{num}}</option>
+        }
+
      </select>
      <button (click)="mostrarDoble()">Ver doble</button>
 </form>
