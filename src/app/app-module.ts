@@ -7,6 +7,10 @@ import { CineComponent } from './cine-component/cine-component';
 import { CasaComponent } from './casa-component/casa-component';
 import { NotFoundComponent } from './not-found-component/not-found-component';
 import { MenuComponent } from './menu-component/menu-component';
+import { FormsModule } from '@angular/forms';
+import { NumerosParesComponent } from './components/numeros-pares-component/numeros-pares-component';
+import { TablaMultiplicarComponent } from './components/tabla-multiplicar-component/tabla-multiplicar-component';
+import { SelectNumerosDobles } from './components/select-numeros-dobles/select-numeros-dobles';
 
 @NgModule({
   declarations: [
@@ -16,8 +20,11 @@ import { MenuComponent } from './menu-component/menu-component';
     CasaComponent,
     NotFoundComponent,
     MenuComponent,
+    NumerosParesComponent,
+    TablaMultiplicarComponent,
+    SelectNumerosDobles,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [provideBrowserGlobalErrorListeners()],
   bootstrap: [App],
 })

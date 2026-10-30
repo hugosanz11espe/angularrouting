@@ -1,0 +1,18 @@
+<h1>Select numeros</h1>
+<form #form="ngForm">
+    Seleccione un numero:
+    <select
+     name="selectnumero" #selectnumero>
+     <option>7</option>
+     <option>8</option>
+     <option>11</option>
+     <option>12</option>
+     <option>30</option>
+     </select>
+     <button (click)="mostrarDoble()">Ver doble</button>
+</form>
+@if (doble != 0) {
+    <h1 style="color: rgb(0, 0, 0);">
+    El doble es: {{doble}}
+    </h1>
+}
